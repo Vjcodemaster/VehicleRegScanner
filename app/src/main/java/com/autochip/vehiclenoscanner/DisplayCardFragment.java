@@ -295,7 +295,7 @@ public class DisplayCardFragment extends Fragment implements OnAsyncTaskInterfac
                 params.put("db", StaticReferenceClass.DB_NAME); //Trufrost-Testing
                 params.put("user", StaticReferenceClass.USER_ID);
                 params.put("password", StaticReferenceClass.PASSWORD);
-                params.put("vehicle_no", etVehicleNo.getEditText().toString().trim());
+                params.put("vehicle_no", sName.trim());
                 VolleyTask volleyTask = new VolleyTask(getActivity(), params, "SEND_VEHICLE_NUMBER", VEHICLE_URL);
                     getActivity().getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 /*if (!networkState.isNetworkAvailable(getActivity()) && !networkState.isOnline()) {
